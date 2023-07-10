@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blanco: #F0F0F0;
+  --rojo: #BE3144;
+  --azul: #45567D;
+  --gris: #303841;
+}
+
+/** REGLAS GENERALES */
+
+html {
+  font-size: 10px; /* 10 px */
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p, a {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* FIN REGLAS GENERALES */
+
+/** REGLAS DEL HEADER */
+
+.nav {
+  background-color: var(--rojo);
+  display: flex;
+  justify-content: end;
+  padding-right: 2rem;
+  /* position */
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.nav_links {
+  display: flex;
+}
+
+.nav_link a {
+  display: block;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.nav_link a:hover {
+  background-color: var(--azul);
+}
+
+/* FIN REGLAS DEL HEADER */
+
+/** REGLAS DEL HERO */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.hero h1 {
+  font-size: 6rem;
+  color: var(--blanco);
+}
+
+.hero p {
+  font-size: 3rem;
+  color: var(--rojo);
+  font-style: italic;
+  font-weight: 200;
+}
+
+/* FIN REGLAS DEL HERO*/
+
+/** REGLAS DE PROJECTS */
+
+.projects {
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+.projects > h2 {
+  font-size: 4.2rem;
+  color: var(--blanco);
+  border-bottom: .2rem solid var(--blanco);
+  line-height: 1.4;
+  padding: 0 1.4rem;
+}
+
+.cards {
+  display: grid;
+  max-width: 1280px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+/* FIN REGLAS DE PROJECTS */
