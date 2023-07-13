@@ -16,6 +16,7 @@
 
 html {
   font-size: 10px; /* 10 px */
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -51,9 +52,10 @@ img {
   justify-content: end;
   padding-right: 2rem;
   /* position */
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 .nav_links {
@@ -177,6 +179,8 @@ img {
   flex-direction: column;
   align-items: center;
   color: var(--blanco);
+  height: 80vh;
+  justify-content: center;
 }
 
 .contact > h2 {
@@ -189,4 +193,40 @@ img {
   font-style: italic;
 }
 
+.contact_links {
+  font-size: 2.4rem;
+  display: flex;
+  gap: 4rem;
+  padding: 6rem;
+}
+
+.contact_link {
+  display: block;
+  transform: translateY(0);
+  padding: 1.5rem .5rem;
+  transition: all .4s;
+}
+
+.contact_link:hover {
+  transform: translateY(11px);
+}
+
 /* FIN REGLAS DE CONTACT */ 
+
+/** REGLAS DE FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--gris);
+  color: var(--blanco);
+  border-top: 4px solid var(--rojo);
+}
+
+.footer > p{
+  padding: 3.9rem 1rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+/* FIN REGLAS DE FOOTER */
